@@ -1,6 +1,6 @@
 {
   "name": "random-signal",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate a pseudo-random signal stream for mocking Sensor data",
   "main": "index.js",
   "scripts": {
