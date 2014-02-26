@@ -74,3 +74,9 @@ If the stream is not configured in objectMode this seperator will be applied to 
 
 ### timeFormatter
 A function that takes a Javascript `Date` object as inputs and outputs a formatted date string. The default `getTimeString` function will output dates as `"YYYY-MM-SS HH:MM:SS.f"`
+
+
+## Install
+```bash
+npm install random-signal
+```
