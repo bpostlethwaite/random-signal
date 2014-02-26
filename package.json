@@ -1,0 +1,30 @@
+{
+  "name": "random-signal",
+  "version": "0.0.0",
+  "description": "Generate a pseudo-random signal stream for mocking Sensor data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpostlethwaite/random-signal.git"
+  },
+  "keywords": [
+    "random",
+    "signal",
+    "stream",
+    "timeseries",
+    "maker",
+    "sensor"
+  ],
+  "author": "Ben Postlethwaite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bpostlethwaite/random-signal/issues"
+  },
+  "homepage": "https://github.com/bpostlethwaite/random-signal",
+  "dependencies": {
+    "readable-stream": "~1.0.26"
+  }
+}
