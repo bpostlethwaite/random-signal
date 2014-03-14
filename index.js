@@ -25,7 +25,7 @@ function RandomSignal (opt) {
     , trendIV = opt.trendIV || (1000 * 1/hz) // milliseconds
     , lowtrend = opt.lowtrend || -amp
     , hightrend = opt.hightrend || amp
-    , sep = opt.sep || ""
+    , sep = (typeof(opt.sep) === 'string') ? opt.sep : "\n"
     , timeFormatter = opt.timeFormatter || getTimeString
 
   hz *= 2 * Math.PI // compute once here for later ts computations
