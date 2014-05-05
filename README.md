@@ -32,6 +32,20 @@ outputs
 ## Options
 Along with Readable stream options, (including object mode) you may pass in these options or use the defaults given below
 
+```
+y = amp * Math.sin(hz*ts) + noise + trend
+  = amp * Math.sin(hz*ts) + noise(0, noiseAmp) + Math.sin(noiseHz*ts) + trend
+  = amp * Math.sin(hz*ts) + noise(0, noiseAmp) + Math.sin(noiseHz*ts) + noise(lowtrend, hightrend)
+```
+
+where
+```
+noise = function(low, high) {
+  Math.random() * (low - high + 1) + low
+}
+
+```
+
 ```javascript
   var tdelta = opt.tdelta || 50
     , hz = opt.hz || (1 / 20 * tdelta)
