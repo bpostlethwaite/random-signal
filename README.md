@@ -35,14 +35,14 @@ Along with Readable stream options, (including object mode) you may pass in thes
 
 ```javascript
   var tdelta = opt.tdelta || 50
-    , hz = opt.hz || (1 / 20 * tdelta)
+    , hz = opt.hz || 1000 / (20 * tdelta)
     , amp = opt.amp || 1
     , noiseHz = opt.noiseHz || 4 * hz
     , noiseAmp = opt.noiseAmp || 0.3 * amp
     , trendIV = opt.trendIV || (1000 * 1/hz)
     , lowtrend = opt.lowtrend || -amp
     , hightrend = opt.hightrend || amp
-    , sep = opt.sep || ""
+    , sep = (typeof(opt.sep) === 'string') ? opt.sep : "\n"
     , timeFormatter = opt.timeFormatter || getTimeString
 ```
 
